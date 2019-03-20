@@ -239,3 +239,17 @@ prom_edad = array1.sum(axis=0)[3] / array1.shape[0]
 ((array1[:,28] > 95)*1).sum()
 
 
+########## Graficas ##############
+
+import matplotlib.pyplot as plt
+%matplotlib qt
+strenght = 28
+age = 3
+top = 500
+pid = 1
+plt.scatter(a[:top,strenght],a[:top,pid])
+plt.hist(a[:,strenght].transpose())
+plt.boxplot(a[:top,strenght])
+plt.hist([:,age])
+
+
